@@ -1,1 +1,1 @@
-# etchasketch
+This project hopes to imitate a simple Etch-a-sktch board on a webpage, testing my ability to manipulate DOMs
