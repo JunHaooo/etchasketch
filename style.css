@@ -1,14 +1,14 @@
-#row {
-    display:flex;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(16, 50px); /* Assuming each cell is 50px wide */
+    grid-gap: 0px; /* Gap between cells */
+    border-collapse: collapse;
 }
 
-#col {
-    display: flex;
-    width: 50px;
+.grid-item {
+    border: 2px solid black;
     height: 50px;
-    border-width: 2px;
-    border-color: black;
-    border-style: solid;
     justify-content: center;
     align-items: center;
+    display: flex;
 }
