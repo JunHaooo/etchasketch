@@ -8,3 +8,30 @@ for (let i = 0; i < 16; i++) {
         gridContainer.appendChild(col);
     }
 }
+
+const gridItems = document.querySelectorAll('.grid-item');
+let isMouseDown = false;
+
+gridItems.forEach(gridItem => {
+    gridItem.addEventListener('mousedown', () => {
+        isMouseDown = true;
+        gridItem.style.backgroundColor = 'blue'; // Change the color as desired
+      });
+
+    document.addEventListener('mousemove', (event) => {
+    if (isMouseDown) {
+        const hoveredElement = event.target;
+        if (hoveredElement.classList.contains('grid-item')) {
+        hoveredElement.style.backgroundColor = 'blue'; // Change the color as desired
+        }
+    }
+    
+    document.addEventListener('mouseup', () => {
+        isMouseDown = false;
+    }
+    )
+});
+
+});
+  
+
