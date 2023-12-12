@@ -1,14 +1,7 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(16, 50px); /* Assuming each cell is 50px wide */
-    grid-gap: 0px; /* Gap between cells */
-    border-collapse: collapse;
+#row {
+    display: flex;
 }
 
 .grid-item {
     border: 2px solid black;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
 }
